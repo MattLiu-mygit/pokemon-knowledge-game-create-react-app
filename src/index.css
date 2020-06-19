@@ -51,13 +51,15 @@ body {
 }
 
 .pokeball {
-  width: 10%;
-  margin: 3rem;
-  margin-left: 22rem;
+  width: 20rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 17.5rem;
 }
 
 .start_game_button {
-  margin-left: 25rem;
+  margin-left: 22rem;
+  font-size: 2rem;
 }
 
 .instructions {
@@ -117,7 +119,20 @@ button {
 
 .result .score {
   font-family: 'OCR A Std', monospace;
-  font-size: 125%;
+  font-size: 200%;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  border-top: solid;
+  color: white;
+  border-top-color: springgreen;
+  border-bottom:solid;
+  border-bottom-color: grey;
+  border-radius: 12px;
+  padding:0.5rem;
+  width: 20rem;
+  float:left;
+  background-color: lightgreen;
+  margin-right: 2rem;
 }
 
 .congrats {
@@ -205,15 +220,12 @@ input {
   border-top-right-radius: 12px;
 }
 
-.Pokemon .attribute_display {
-  margin-left: 5px;
-}
-
 .Pokemon .name {
   margin-left: 5px;
 }
 
 .Pokemon .attribute_display {
+  margin-left: 5px;
   margin-top: 1px;
   margin-bottom: 1px;
   height: 30px;
@@ -253,7 +265,7 @@ input {
 }
 
 .random_attribute {
-  width: 25rem;
+  width: 30rem;
   border-top: solid;
   border-color: grey;
   border-bottom: solid;
