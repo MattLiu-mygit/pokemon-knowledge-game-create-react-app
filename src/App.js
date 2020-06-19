@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Game from './Game'
 import axios from 'axios';
+import logo from './logo.png';
 
 // An app that tests your Pokemon knowledge! Probably not getting deployed ;(.
 // An app made with create-react-app
@@ -50,7 +51,7 @@ export function App() {
   return (
     <div>
       <div className = 'header'>
-        <img className = 'front_image' src = 'https://lh3.googleusercontent.com/proxy/lJEbzPkOs8clGrXY3Hemi8CrKhimCGMaCHiVenk4arkr_IkM2pBLu81oh0CrVHrA3ntIi1w5QN9THheAf7YK46-UD-zGH-_WP286QXT-Md3PHv3LeXNFcY-OGuLfzGkD0CefBpRvW9IrcpMjplChxyJJ'/>
+        <img className = 'front_image' src = {logo} alt = 'oops, logo not found'/>
         <h1 className = 'title'>A Pokemon Knowledge Test!</h1>
       </div>
       <Game key = {gameId} startNewGame = {() => {

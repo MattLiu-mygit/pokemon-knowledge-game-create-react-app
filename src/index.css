@@ -73,23 +73,25 @@ button {
 
 .or {
   margin-top: 3rem;
-  font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+  font-family: 'OCR A Std', monospace;
+  font-size: 110%;
+  font-weight: 700;
 }
 
 .result .score {
-  font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+  font-family: 'OCR A Std', monospace;
   font-size: 125%;
 }
 
 .congrats {
-  font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+  font-family: 'OCR A Std', monospace;
   font-size: 150%;
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
 
 .result .instructions{
-  font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+  font-family: 'OCR A Std', monospace;
   padding-left: 0;
   width: 50%;
 }
@@ -139,7 +141,7 @@ input {
 }
 
 .Pokemon {
-  width: 15%;
+  width: 250px;
   border-radius: 12px;
   font-family: 'DejaVu Sans Mono', monospace; 
   display: inline-block;
@@ -183,7 +185,7 @@ input {
 .moves_val {
   overflow: auto;
   white-space: nowrap;
-  height: 45px;
+  height: 40px;
   margin-top: 10px;
 }
 

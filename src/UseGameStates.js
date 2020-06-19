@@ -6,7 +6,7 @@ const UseGameState = (gameStart) => {
     const [pokeList, setPokeList] = useState([]);
     const [resultPokeList, setResultPokeList] = useState([]);
     const [score, setScore] = useState(0);
-    const [secondsLeft, setSecondsLeft] = useState(60);
+    const [secondsLeft, setSecondsLeft] = useState(0);
     const [rerollTimer, setRerollTimer] = useState(5);
 
     /* Handles the timers. When rendered, the timer is started. On timeout after a second, 

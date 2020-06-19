@@ -1,9 +1,10 @@
 import React from 'react';
+import pokeball from './pokeball.png';
 
 // The start screen that the user first sees when opening the app.
 const StartScreen = (props) => {
     return <div>
-        <img className = 'pokeball' src = 'https://lh3.googleusercontent.com/proxy/11e9U5lJQtoMP4aZSDCsIgNv8BokC9P0K2a4FL34P_9DBgiZnQndgIZFh1GyrwDGPZZ7Q5ci71SI2EysAHE8M0He70F57OvWiM98FANFeuh9HXEfumjBntd3RvDAkWMhBVlg' />
+        <img className = 'pokeball' src = {pokeball} alt = 'oops, sorry not found'/>
         <div className = 'description'>A Pokemon knowledge quiz game made with React.js and the PokeAPI, the Restful Pokemon API, developed by Matthew Liu.</div>
         <div className = 'instructions'>
             <div>Test your Pokemon knowledge! In 60 seconds, try to match as many Pokemon to the characteristic thrown atcha! If your characteristic is too hard, feel free to reroll a new characteristic to test! Don't worry, you keep your score, even after rerolling! Be aware of the 5 second reroll timer huehuehue!</div>
