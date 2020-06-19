@@ -36,8 +36,12 @@ const Game = (props) => {
                     </div> 
                     <div className = 'score'>Score: {score}</div>
                     <div className = 'timer'>Time Remaining: {secondsLeft} </div>
-                    <PokeSearch onSubmit = {addNewPokemon} attribute = {props.attribute} pokeList = {pokeList}/>
+                    <PokeSearch className = 'PokeSearch' onSubmit = {addNewPokemon} attribute = {props.attribute} pokeList = {pokeList}/>
+                    {
+                    pokeList.length !== 0 ?
                     <GuessList pokeList = {pokeList} setScore = {setScore} score = {score} attribute = {props.attribute}/>
+                    : null
+                    }   
                     <div className = 'reroll_button'>
                     {
                         // If the reroll timer is at 0 seconds, the reroll button can be played.

@@ -63,10 +63,16 @@ const Results = (props) => {
         <h3 className = 'value'>Value: {val}</h3>
         <AttributeSearch onSubmitAttribute = {onSubmitAttribute} onSubmitValue = {onSubmitValue} onClick = {getPokeList}/>
         {
+            props.pokeList.length !== 0 || loading ?
+        
+        <div>{
         !loading ?
             <div className = 'pokemon_list'>{props.pokeList.map(pokeList => <Pokemon key = {pokeList.id} {...pokeList} attribute = {attribs} />)}</div>
         : <img className = 'loading' src = 'https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif' />
-        }    
+        }
+        </div>
+        : null
+        }
     </div>
 }
 

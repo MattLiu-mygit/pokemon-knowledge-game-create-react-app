@@ -10,12 +10,29 @@ body {
 }
 
 .header {
-  font-family: 'OCR A Std', monospace;
   padding:1rem;
+  border-radius: 12px;
+  border-top: solid;
+  border-right: solid;
+  border-color: red;
+  background-color: #FF6037;
+  color: white;
+  width: 50rem;
+  height: 4rem;
+  font-size: larger;
+  font-family: 'OCR A Std', monospace;
+}
+
+.front_image {
+  width: 5rem;
+  float: left;
+  padding: 0px;
+  margin-right:10px;
 }
 
 .title {
   margin-left: 4.5%;
+  margin-top: 1rem;
 }
 
 .description {
@@ -23,23 +40,38 @@ body {
   font-style: oblique;
   font-size: 0.9rem;
   padding-left: 1rem;
+  background-color: silver;
+  border-radius: 12px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top: solid;
+  border-bottom: solid;
+  border-color: white;
+  width: 51rem;
 }
 
 .pokeball {
   width: 10%;
   margin: 3rem;
-  margin-left: 27rem;
+  margin-left: 22rem;
 }
 
 .start_game_button {
-  margin-left: 30rem;
+  margin-left: 25rem;
 }
 
 .instructions {
   font-family: DejaVu Sans Mono, monospace;
   font-size: 20px;
-  width: 60rem;
+  width: 50rem;
   padding:2rem;
+  padding-top: 0rem;
+  background-color: tomato;
+  border-radius: 12px;
+  border-top: solid;
+  border-color: darkred;
+  border-width: 0.5rem;
+  margin-top: 10px;
 }
 
 .instructions div {
@@ -97,12 +129,10 @@ button {
 
 .result .instructions{
   font-family: 'OCR A Std', monospace;
-  padding-left: 0;
+  padding-left: 1rem;
+  padding-bottom: 0.75rem;
   width: 50%;
-}
-
-.result .instructions div {
-  padding-top: 1rem;
+  margin-top: 3rem;
 }
 
 input {
@@ -152,9 +182,13 @@ input {
   display: inline-block;
   margin-right: 10px;
   margin-top: 5px;
+  border-bottom-right-radius: 6px;
   border-top: solid;
+  border-top-width: 5px;
   border-right: solid;
-  border-color: #a8b8d0;
+  border-right-width: 4px;
+  border-top-color: rgb(139, 112, 112);
+  border-right-color: rgb(167, 154, 154);
 }
 
 .Pokemon button {
@@ -206,12 +240,8 @@ input {
   height: 40px;
   margin-top: 10px;
   margin-bottom: 1px;
-}
-
-.front_image {
-  width: 5rem;
-  float: left;
-  padding: 0px;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .loading {
@@ -222,6 +252,96 @@ input {
   font-family: 'OCR A Std', monospace;
 }
 
+.random_attribute {
+  width: 25rem;
+  border-top: solid;
+  border-color: grey;
+  border-bottom: solid;
+  border-radius: 12px;
+  padding: 0.1rem;
+  padding-left:1rem;
+  font-size: 75%;
+  margin-bottom: 2rem;
+}
+
+.timer {
+  margin-bottom: 1rem;
+  border-top: solid;
+  border-bottom: solid;
+  border-radius: 12px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-left: solid;
+  padding: 0.1rem;
+  padding-left: 1rem;
+  border-color: greenyellow;
+  background-color: green;
+  color: greenyellow;
+  margin-top: 1rem; 
+  width: 11rem;
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.PokeSearch {
+  border-top: solid;
+  border-bottom: solid;
+  border-color: grey;
+  border-radius: 12px;
+  padding: 0.5rem;
+  width: 15rem;
+  font-weight: 900px;
+  margin-bottom: 1rem;
+}
+
+.PokeSearch input {
+  width: 95%
+}
+
+.playing .score {
+  margin-bottom: 10px;
+  border-top: solid;
+  border-bottom: solid;
+  border-radius: 12px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-left: solid;
+  padding: 0.1rem;
+  padding-left: 1rem;
+  border-color: greenyellow;
+  background-color: green;
+  color: greenyellow;
+  width: 6rem;
+  float:left;
+}
+
 .value {
   font-family: 'OCR A Std', monospace;
+}
+
+.pokemon_list {
+  background-color: silver;
+  border-radius: 12px;
+  margin-top:10px;
+  width: 109rem;
+  padding-top:0.5rem;
+  padding-right: 0rem;
+  padding-left: 1rem;
+  border-top: solid;
+  border-top-color: grey;
+  border-width: 7.5px;
+}
+
+.guesses {
+  background-color: silver;
+  border-radius: 12px;
+  margin-top:10px;
+  width: 54rem;
+  padding-top:0.5rem;
+  padding-right: 0rem;
+  padding-left: 1rem;
+  padding-bottom:1rem;
+  border-top: solid;
+  border-top-color: grey;
+  border-width: 7.5px;
 }

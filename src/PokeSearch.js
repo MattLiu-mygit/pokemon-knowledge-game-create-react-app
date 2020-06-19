@@ -47,7 +47,7 @@ const PokeSearch = (props) => {
         setName('');
     }
     
-    return <div>
+    return <div className = 'PokeSearch'>
         Search for pokemon here!
         <form onSubmit = {handleSubmit} className = 'submit_form'>
             <input className = 'submit_input'
