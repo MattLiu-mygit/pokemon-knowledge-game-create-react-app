@@ -6,7 +6,7 @@ const UseGameState = (gameStart) => {
     const [pokeList, setPokeList] = useState([]);
     const [resultPokeList, setResultPokeList] = useState([]);
     const [score, setScore] = useState(0);
-    const [secondsLeft, setSecondsLeft] = useState(60);
+    const [secondsLeft, setSecondsLeft] = useState(1);
     const [rerollTimer, setRerollTimer] = useState(5);
 
     /* Handles the timers. When rendered, the timer is started. On timeout after a second, 
@@ -29,7 +29,7 @@ const UseGameState = (gameStart) => {
         // Checks to see if the Pokemon matches the current characteristics to match. If it matches and 
         // There is still time on the timer, score is invremented.
         let color = correct_pokemon_check(pokemon, attribute, 'white');
-        if (color === 'green' && secondsLeft > 0) {
+        if (color === '#90ee90' && secondsLeft > 0) {
             setScore(score+1)
         }
         setPokeList([...pokeList, pokemon]);

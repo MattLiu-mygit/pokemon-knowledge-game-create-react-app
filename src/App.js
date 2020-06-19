@@ -49,7 +49,10 @@ export function App() {
   }
   return (
     <div>
-      <h1>A Pokemon Knowledge Test!</h1>
+      <div className = 'header'>
+        <img className = 'front_image' src = 'https://lh3.googleusercontent.com/proxy/lJEbzPkOs8clGrXY3Hemi8CrKhimCGMaCHiVenk4arkr_IkM2pBLu81oh0CrVHrA3ntIi1w5QN9THheAf7YK46-UD-zGH-_WP286QXT-Md3PHv3LeXNFcY-OGuLfzGkD0CefBpRvW9IrcpMjplChxyJJ'/>
+        <h1 className = 'title'>A Pokemon Knowledge Test!</h1>
+      </div>
       <Game key = {gameId} startNewGame = {() => {
         /* A function that starts a new game used in the 'play again' button in the Results page.
           When starting a new game, randomizes the attribute and changes the game id so the entire game is

@@ -36,7 +36,7 @@ const AttributeSearch = (props) => {
         setValue('');
     }
     
-    return <div>
+    return <div className = 'AttributeSearch'>
         Search for pokemon here!
         <form onSubmit = {handleAttributeSubmit} className = 'attribute_form'>
             <input className = 'attribute_input'

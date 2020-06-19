@@ -5,9 +5,213 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ffab99;
+  padding: 1rem;
+}
+
+.header {
+  font-family: 'OCR A Std', monospace;
+  padding:1rem;
+}
+
+.title {
+  margin-left: 4.5%;
+}
+
+.description {
+  font-family: 'OCR A Std', monospace;
+  font-style: oblique;
+  font-size: 0.9rem;
+  padding-left: 1rem;
+}
+
+.pokeball {
+  width: 10%;
+  margin: 3rem;
+  margin-left: 31.5rem;
+}
+
+.start_game_button {
+  margin-left: 35rem;
+}
+
+.instructions {
+  font-family: DejaVu Sans Mono, monospace;
+  font-size: 20px;
+  width: 60%;
+  padding:2rem;
+}
+
+.instructions .finishGameInstruction {
+  margin-top: 20px;
+}
+
+.description {
+  font-family: 'Gill Sans', sans-serif;
+  margin-left: 15px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.started {
+  padding:2rem;
+}
+
+button {
+  color: white;
+  background-color: red;
+  border: none;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.or {
+  margin-top: 3rem;
+  font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+}
+
+.result .score {
+  font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+  font-size: 125%;
+}
+
+.congrats {
+  font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+  font-size: 150%;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.result .instructions{
+  font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+  padding-left: 0;
+  width: 50%;
+}
+
+.result .instructions div {
+  padding-top: 1rem;
+}
+
+input {
+  border-radius: 12px;
+  width: 20%;
+  margin-top: 5px;
+  background-color: red;
+}
+
+::placeholder {
+  color: black;
+  font-family: 'OCR A Std', monospace;
+}
+
+.AttributeSearch {
+  font-family: 'OCR A Std', monospace;
+}
+
+.play_again {
+  font-size: 150%;
+  width: 150px;
+  height: 50px;
+}
+
+.invalid_attribute {
+  color: red;
+  font-weight: 700;
+  font-size: 80%;
+}
+
+.invalid_pokemon {
+  color: red;
+  font-weight: 700;
+  font-size: 80%;
+}
+
+.duplicate_pokemon {
+  color: red;
+  font-weight: 700;
+  font-size: 80%;
+}
+
+.Pokemon {
+  width: 15%;
+  border-radius: 12px;
+  font-family: 'DejaVu Sans Mono', monospace; 
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.Pokemon button {
+  background-color: grey;
+  border-radius: 0px;
+  border-left: solid;
+  border-left-width: 1px;
+  border-color: #C0C0C0;
+  border-top: solid;
+  font-family: 'DejaVu Sans Mono', monospace;
+}
+
+.Pokemon .button_tabs .weight {
+  border-top-right-radius: 12px;
+}
+
+.Pokemon .attribute_display {
+  margin-left: 5px;
+}
+
+.Pokemon .name {
+  margin-left: 5px;
+}
+
+.Pokemon .attribute_display {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  height: 30px;
+}
+
+.weight_val {
+  margin-bottom: 1rem;
+  margin-top: 10px;
+}
+
+.moves_val {
+  overflow: auto;
+  white-space: nowrap;
+  height: 45px;
+  margin-top: 10px;
+}
+
+.move {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.type {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+.front_image {
+  width: 4%;
+  float: left;
+  padding: 0px;
+}
+
+.loading {
+  width: 10%;
+}
+
+.attribute {
+  font-family: 'OCR A Std', monospace;
+}
+
+.value {
+  font-family: 'OCR A Std', monospace;
 }

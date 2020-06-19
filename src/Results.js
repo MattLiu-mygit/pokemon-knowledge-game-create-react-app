@@ -14,6 +14,7 @@ const getPokemon = async (pokeNum) => {
 const Results = (props) => {
     const [attr, setAttr] = useState('');
     const [val, setVal] = useState('')
+    const [loading, setLoading] = useState(false);
     let attribs = [attr, val];
 
     // A function that sets attr to the attribute submitted from the AttributeSearch
@@ -32,14 +33,16 @@ const Results = (props) => {
     const getPokeList = async () => {
         let pokemonList = [];
         attribs = [attr, val];
-        
         for (let i = 1; i < 808; i++) {
+            setLoading(true);
             let pokemonData = await getPokemon(i);
             let pokemon = pokemonData.data;
-            if (correct_pokemon_check(pokemon, attribs, 'white') === 'green') {
+            if (correct_pokemon_check(pokemon, attribs, 'white') === '#90ee90') {
                 pokemonList.push(pokemon);
+                console.log('oysgubg');
             }
         }
+        setLoading(false);
         props.addNewPokemon(pokemonList);
     }
 
@@ -49,18 +52,21 @@ const Results = (props) => {
         <button onClick = {
             // Calls on the new game function back in the App component.
             props.startNewGame
-            } className = 'playAgain'> Play Again </button>
-        <div>or...</div>
+            } className = 'play_again'> Play Again </button>
+        <div className = 'or'>or...</div>
         <div className = 'instructions'>
-            <div>Learn some new Pokemon facts below! Give an attribute(type, move, or weight) and a value (attribute, like '888' for 'weight', 'grass' for 'type', or 'rock-smash' for 'move'!</div>
+            <div>Learn some new Pokemon facts below! Give an attribute (type, move, or weight) and a value (attribute, like '888' for 'weight', 'grass' for 'type', or 'rock-smash' for 'move'!</div>
             <div>When you're ready, press the 'Search for Pokemon' button to search PokeAPI for all the Pokemon that fit your critieria!</div>
-            <div>Note that for moves of length 2, seperate them with a hyphen(for example 'rock-smash' for 'rock smash').</div>
+            <div>Note that for moves of length 2, seperate them with a hyphen (for example 'rock-smash' for 'rock smash').</div>
         </div>
         <h3 className = 'attribute'>Attribute: {attr}</h3>     
         <h3 className = 'value'>Value: {val}</h3>
         <AttributeSearch onSubmitAttribute = {onSubmitAttribute} onSubmitValue = {onSubmitValue} onClick = {getPokeList}/>
-        <div className = 'pokemon_list'>{props.pokeList.map(pokeList => <Pokemon key = {pokeList.id} {...pokeList} attribute = {attribs} />)}
-        </div>
+        {
+        !loading ?
+            <div className = 'pokemon_list'>{props.pokeList.map(pokeList => <Pokemon key = {pokeList.id} {...pokeList} attribute = {attribs} />)}</div>
+        : <img className = 'loading' src = 'https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif' />
+        }    
     </div>
 }
 

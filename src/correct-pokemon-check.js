@@ -4,10 +4,10 @@ const correct_pokemon_check = (pokemon, attribute, color) => {
         const weight = parseInt(attribute[1]);
         // Determines if weights match within 50 grams of the target.
         if (pokemon.weight < weight + 50 && pokemon.weight > weight -50) {
-            color = 'green';
+            color = '#90ee90';
         }
         else {             
-            color = 'red';
+            color = '#FF8484';
         }
     }
     else {
@@ -20,10 +20,10 @@ const correct_pokemon_check = (pokemon, attribute, color) => {
                 attributeType.forEach(typeName => {
                     // If type matches, don't check anymore and break out of the forEach loop.
                     if (typeName.type.name === attribute[1]) {
-                        color = 'green';
+                        color = '#90ee90';
                         throw BreakException;
                     }                        
-                    color = 'red';
+                    color = '#FF8484';
                 });
             }
             catch(e) {
@@ -37,10 +37,10 @@ const correct_pokemon_check = (pokemon, attribute, color) => {
                 attributeType.forEach(attack => {
                     // If moves matches, don't check anymore and break out of the forEach loop.
                     if (attack.move.name === attribute[1]) {
-                        color = 'green';
+                        color = '#90ee90';
                         throw BreakException;
                     }
-                    color = 'red';
+                    color = '#FF8484';
                 });
             }
             catch(e) {

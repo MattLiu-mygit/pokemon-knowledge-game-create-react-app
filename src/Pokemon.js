@@ -23,21 +23,21 @@ const Pokemon = (props) => {
     color = correct_pokemon_check(pokemon, attribute, color);
 
     return <div className = 'Pokemon' style = {{backgroundColor: color}}> 
-        <img src = {pokemon.sprites.front_default} />
+        <img className = 'image' src = {pokemon.sprites.front_default} />
         <div className = 'info'> 
             <div className = 'name'>{pokemon.species.name.toUpperCase()} </div>
-            <div className = 'attribute display'>{
+            <div className = 'attribute_display'>{
                 // Tabs that show different Pokemon information based on whichever one pressed.
                 buttonPressed === 3 ? 
-                    <div className = 'weight'>{pokemon.weight}</div>
+                    <div className = 'weight_val'>{pokemon.weight}</div>
                 : buttonPressed === 2 ? // Displays an array of move divs.
-                    <div className = 'moves'>{moveList.map(move => <p key = {move.id}>{move}</p>)}</div>
-                : <div className = 'types'>{typeList.map(type => <p key = {type.id}>{type}</p>)}</div> // Displys an array of type divs.
+                    <div className = 'moves_val'>{moveList.map(move => <p className = 'move' key = {move.id}>{move}</p>)}</div>
+                : <div className = 'types_val'>{typeList.map(type => <p className = 'type' key = {type.id}>{type}</p>)}</div> // Displys an array of type divs.
             }</div>
-            <div className = 'button tabs'>
-                <button onClick = {() => {setButtonPressed(1);}}>Types</button>
-                <button onClick = {() => {setButtonPressed(2);}}>Moves</button>
-                <button onClick = {() => {setButtonPressed(3);}}>Weight</button>
+            <div className = 'button_tabs'>
+                <button className = 'types' onClick = {() => {setButtonPressed(1);}}>Types</button>
+                <button className = 'moves' onClick = {() => {setButtonPressed(2);}}>Moves</button>
+                <button className = 'weight' onClick = {() => {setButtonPressed(3);}}>Weight</button>
             </div>
         </div> 
     </div>
