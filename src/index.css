@@ -233,14 +233,12 @@ input {
 
 .weight_val {
   margin-bottom: 1rem;
-  margin-top: 10px;
 }
 
 .moves_val {
   overflow: auto;
   white-space: nowrap;
   height: 40px;
-  margin-top: 10px;
 }
 
 .move {
@@ -249,11 +247,16 @@ input {
 }
 
 .type {
-  height: 40px;
-  margin-top: 10px;
+  height: 18px;
+  margin-top: 0px;
   margin-bottom: 1px;
+  padding-bottom: 0px;
+}
+
+.types_val {
   overflow: auto;
   white-space: nowrap;
+  height: 40px;
 }
 
 .loading {
