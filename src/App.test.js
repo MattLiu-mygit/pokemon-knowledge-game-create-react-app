@@ -1,9 +1,25 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import * as React from 'react';
+import '@testing-library/jest-dom/extend-expect';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+import { App } from './App';
+
+import { render, fireEvent, screen } from '@testing-library/react';
+
+describe('App', () => {
+  it('renders ansd increments counter', () => {
+    const { getByText, getByTitle, asFragment } = render(
+      <App initialData={{ appName: 'TEST' }} />,
+    );
+    expect(getByText('TEST')).toMatchInlineSnapshot(`
+      <h1>
+        TEST
+      </h1>
+    `);
+
+    const button = screen.getByTitle('increment');
+    fireEvent.click(button);
+    expect(getByTitle('increment')).toHaveTextContent('1');
+
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
