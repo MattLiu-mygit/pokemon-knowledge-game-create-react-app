@@ -7,7 +7,8 @@ const StartScreen = (props) => {
         <img className = 'pokeball' src = {pokeball} alt = 'oops, sorry not found'/>
         <div className = 'description'>A Pokemon knowledge quiz game made with React.js and the PokeAPI, the Restful Pokemon API, developed by Matthew Liu.</div>
         <div className = 'instructions'>
-            <div>Test your Pokemon knowledge! In 60 seconds, try to match as many Pokemon to the characteristic thrown atcha! If your characteristic is too hard, feel free to reroll a new characteristic to test! Don't worry, you keep your score, even after rerolling! Be aware of the 5 second reroll timer huehuehue!</div>
+            <div>Test your Pokemon knowledge! In 60 seconds, try to match as many Pokemon to the characteristic thrown atcha! </div>
+            <div>If your characteristic is too hard, feel free to reroll a new characteristic to test! Don't worry, you keep your score, even after rerolling! Be aware of the 5 second reroll timer huehuehue!</div>
             <div className = 'finishGameInstruction'>Once you finish your game, have some fun giving the API some attributes to match in the results page!</div>
             <div>Gotta answer 'em all!</div>
         </div>

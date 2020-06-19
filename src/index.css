@@ -28,27 +28,27 @@ body {
 .pokeball {
   width: 10%;
   margin: 3rem;
-  margin-left: 31.5rem;
+  margin-left: 27rem;
 }
 
 .start_game_button {
-  margin-left: 35rem;
+  margin-left: 30rem;
 }
 
 .instructions {
   font-family: DejaVu Sans Mono, monospace;
   font-size: 20px;
-  width: 60%;
+  width: 60rem;
   padding:2rem;
 }
 
-.instructions .finishGameInstruction {
+.instructions div {
   margin-top: 20px;
 }
 
 .description {
   font-family: 'Gill Sans', sans-serif;
-  margin-left: 15px;
+  margin-left: 1rem;
 }
 
 code {
@@ -58,6 +58,11 @@ code {
 
 .started {
   padding:2rem;
+}
+
+.playing div {
+  font-family: 'OCR A Std', monospace;
+  margin-top: 5px;
 }
 
 button {
@@ -141,12 +146,15 @@ input {
 }
 
 .Pokemon {
-  width: 250px;
+  width: 270px;
   border-radius: 12px;
   font-family: 'DejaVu Sans Mono', monospace; 
   display: inline-block;
   margin-right: 10px;
   margin-top: 5px;
+  border-top: solid;
+  border-right: solid;
+  border-color: #a8b8d0;
 }
 
 .Pokemon button {
@@ -201,7 +209,7 @@ input {
 }
 
 .front_image {
-  width: 4%;
+  width: 5rem;
   float: left;
   padding: 0px;
 }
