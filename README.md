@@ -1,3 +1,7 @@
+## What is this?
+
+A Pokemon Knownledge Test Version created with the create-react-app that isn't server-rendered to facilitate Heroku deployment. Looking into using nginx  for server-rendered deployment.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
