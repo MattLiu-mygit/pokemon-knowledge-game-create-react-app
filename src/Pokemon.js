@@ -29,7 +29,7 @@ const Pokemon = (props) => {
             <div className = 'attribute_display'>{
                 // Tabs that show different Pokemon information based on whichever one pressed.
                 buttonPressed === 3 ? 
-                    <div className = 'weight_val'>{pokemon.weight}</div>
+                    <div className = 'weight_val'>{pokemon.weight} kg</div>
                 : buttonPressed === 2 ? // Displays an array of move divs.
                     <div className = 'moves_val'>{moveList.map(move => <p className = 'move' key = {move.id}>{move}</p>)}</div>
                 : <div className = 'types_val'>{typeList.map(type => <p className = 'type' key = {type.id}>{type}</p>)}</div> // Displys an array of type divs.
