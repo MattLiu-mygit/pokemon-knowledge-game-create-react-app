@@ -3,6 +3,7 @@ import Game from './Game'
 import axios from 'axios';
 
 // An app that tests your Pokemon knowledge! Probably not getting deployed ;(.
+// An app made with create-react-app
 
 // A custom hook that handles all the dynamically changing states.
 const UseAppState = () => {
