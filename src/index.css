@@ -342,9 +342,10 @@ input {
   padding-top:0.5rem;
   padding-right: 0rem;
   padding-left: 1rem;
+  padding-bottom: 0.5rem;
   border-top: solid;
   border-top-color: grey;
-  border-width: 7.5px;
+  border-top-width: 7.5px;
 }
 
 .guesses {
